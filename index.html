@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/mikira.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>PANGASINAN COVID-19 REPORT</title>
+
+    <!--JavaScript Start here..-->
+    <script>
+
+        window.onload = function() {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            backgroundColor: "transparent",
+            
+            title: {
+                fontColor: "GoldenRod",
+                text: "MONITORING REPORT \n\n- as of April 1,2020, 9:00 AM"
+                
+            },
+            data: [{
+                type: "pie",
+                indexLabelFontColor: "White",
+                indexLabelPlacement: "inside",
+                startAngle: 240,
+                yValueFormatString: "##0.00\"%\"",
+                //indexLabel: "{label} {y}",
+                dataPoints: [
+                    {y: 60.45, indexLabel:"\b  PUI 37 RECOVERED" , legendText: "Apple", indexLabelFontColor: "Yellow", color: "ForestGreen", indexLabelPlacement: "inside", label: "Health"},
+                     {y: 20.26, indexLabel:"\bPUI 17 CONFINED" , legendText: "Apple",indexLabelFontColor: "Black", color: "white"},
+                    {y: 10.31, indexLabel:"\bPUI 4 DIED" , legendText: "Apple",  color: "Black"},
+                    {y: 10.06, indexLabel:"\bCC 16 CONFINED" , legendText: "Apple", color: "FireBrick"},
+                    {y: 15.91, indexLabel:"\bCC 7 DIED" , legendText: "Apple", indexLabelFontColor: "Black", color: "Red"},
+                   
+                ]
+
+                // indexLabelPlacement: "inside",
+				// dataPoints: [
+				// 	{ y: 32, label: "" },
+				// 	{ y: 22, label: "" },
+				// 	{ y: 15, label: "" },
+				// 	{ y: 19, label: "" },
+				// 	{ y: 5, label: "" },
+				// 	{ y: 7, label: "" }
+				// ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+    <!---END OF SCRIPT-->
+
+</head>
+<body>
+    <table align="center" style="margin-top:20px;">
+        <tr>
+            <th><a href="https://www.facebook.com/search/top/?q=pangasinan%20covid%2019&epa=SEARCH_BOX"><img src="img/logo2.png"></a></th>
+            <th style="width:600px; font-size:60px; color:white; text-shadow: 5px 5px 5px #0e144d;">PANGASINAN COVID-19 REPORT</th>
+            <th><a href="https://www.who.int/philippines/emergencies/covid-19-in-the-philippines"><img src="img/logsss.png" alt=""></a></th>
+        </tr>
+    </table>
+
+    <table align="center;" style="margin-left:20px; margin-top:70px;">
+
+
+        <tr>
+            <th style="width:200px;"><img src="img/6.png" style="width: 600px; height:600px; margin-left:100px;"></th>
+            
+            <th style="width:430px;"> <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                <div id="chartContainer" style="height:500px; width:500px; margin-right:100px; color:white;" ></div>
+            </th>
+        </tr>
+
+    </table>
+
+    <table align="center" style="margin-top:70px; margin-bottom:20px;">
+
+        <tr>
+            <th></th>
+                <th style="width:300px; color:yellow;">COVID-19 Assistance Team Hotline: <br> <br>
+                                                            GLOBE: 0917-5843062  <br>
+                                                            SUN: 0933-8138623    <br>
+                </th>
+
+                <th style="width:100px;"></th>
+
+                <th style="width:400px; color:yellow;">Source of Data:<br>
+                    Hospitals (Private & Government)/ City/ Municipal Health Office
+                </th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td colspan="5" align="center" style="color:yellow;">Designed by <a href="https://www.facebook.com/karma.mikiox7r">Michael S. Delos Reyes</a><br>04-02-2020</td>
+        </tr>
+    </table>
+
+        <!--MICHAEL S. DELOS REYES II-BSIT-C-->
+</body>
+</html>
